@@ -40,7 +40,7 @@ jobs:
       with:
         artifact: geoip.dat
         commit: master
-        name: $TAG
-        tag: $TAG
+        name: "$TAG"
+        tag: "$TAG"
         token: ${{ secrets.TOKEN }}
       
