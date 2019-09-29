@@ -35,6 +35,7 @@ jobs:
         
     - name: Release
       uses: JasonEtco/upload-to-release@master
-      args: geoip.dat
+      with:
+        args: geoip.dat
       env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
