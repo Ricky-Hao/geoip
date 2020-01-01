@@ -2,7 +2,7 @@
 
 set -e
 
-curl -L -O http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country-CSV.zip
+curl -L -O "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=JvbzLLx7qBZT&suffix=zip" -o GeoLite2-Country-CSV.zip
 unzip GeoLite2-Country-CSV.zip
 rm GeoLite2-Country-CSV.zip
 mv GeoLite2* geoip
