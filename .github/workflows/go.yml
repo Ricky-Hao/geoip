@@ -1,5 +1,8 @@
 name: Go
 on: 
+  push:
+    branches:
+    - master
   schedule:
   - cron: 0 0 * * 3
 jobs:
@@ -43,4 +46,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ASSET_PATH: publish
-      
+        TAG_NAME: Latest
+        NAME: Latest
